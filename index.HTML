@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaking Bad Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #1a1a1a;
+        }
+        .question {
+            margin: 20px 0;
+        }
+        .options {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 0;
+        }
+        .options input {
+            margin-right: 10px;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .incorrect {
+            color: red;
+        }
+        .correct {
+            color: green;
+        }
+        .image-container {
+            margin: 20px 0;
+        }
+        img {
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Breaking Bad Quiz</h1>
+    <div class="image-container">
+        <img src="https://d.ibtimes.co.uk/en/full/1418450/breaking-bads-walter-jesse-better-call-saul.png?w=736&f=726a3bc1699c453404d03e9e5aec06a1/300x200?text=Walter+and+Jesse" alt="Walter and Jesse">
+    </div>
+    <form id="quiz-form">
+        <!-- Question 1 -->
+        <div class="question">
+            <h2>1. Who is the main character of Breaking Bad?</h2>
+            <div class="options">
+                <label><input type="radio" name="q1" value="Walter White"> Walter White</label>
+                <label><input type="radio" name="q1" value="Jesse Pinkman"> Jesse Pinkman</label>
+                <label><input type="radio" name="q1" value="Hank Schrader"> Hank Schrader</label>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <h2>2. What is Walter White's alias?</h2>
+            <div class="options">
+                <label><input type="radio" name="q2" value="Heisenberg"> Heisenberg</label>
+                <label><input type="radio" name="q2" value="The Kingpin"> The Kingpin</label>
+                <label><input type="radio" name="q2" value="The Teacher"> The Teacher</label>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <h2>3. What is Jesse Pinkman's favorite phrase?</h2>
+            <div class="options">
+                <label><input type="radio" name="q3" value="Yo"> Yo</label>
+                <label><input type="radio" name="q3" value="Bitch"> Bitch</label>
+                <label><input type="radio" name="q3" value="Yeah, Science"> Yeah, Science</label>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <h2>4. What is the name of Walter White's wife?</h2>
+            <div class="options">
+                <label><input type="radio" name="q4" value="Skyler White"> Skyler White</label>
+                <label><input type="radio" name="q4" value="Marie Schrader"> Marie Schrader</label>
+                <label><input type="radio" name="q4" value="Saul Goodman"> Saul Goodman</label>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <h2>5. What is the name of Jesse Pinkman's ex-girlfriend?</h2>
+            <div class="options">
+                <label><input type="radio" name="q5" value="Jane Margolis"> Jane Margolis</label>
+                <label><input type="radio" name="q5" value="Lydia Rodarte-Quayle"> Lydia Rodarte-Quayle</label>
+                <label><input type="radio" name="q5" value="Andrea Cantillo"> Andrea Cantillo</label>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <h2>6. Who is the first person Walter White kills?</h2>
+            <div class="options">
+                <label><input type="radio" name="q6" value="Emilio Koyama"> Emilio Koyama</label>
+                <label><input type="radio" name="q6" value="Tuco Salamanca"> Tuco Salamanca</label>
+                <label><input type="radio" name="q6" value="Gus Fring"> Gus Fring</label>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <h2>7. What is Walter White's profession before becoming a meth manufacturer?</h2>
+            <div class="options">
+                <label><input type="radio" name="q7" value="Chemistry Teacher"> Chemistry Teacher</label>
+                <label><input type="radio" name="q7" value="Car Wash Employee"> Car Wash Employee</label>
+                <label><input type="radio" name="q7" value="Pharmacist"> Pharmacist</label>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <h2>8. What is the name of Gus Fring's fast-food chain?</h2>
+            <div class="options">
+                <label><input type="radio" name="q8" value="Los Pollos Hermanos"> Los Pollos Hermanos</label>
+                <label><input type="radio" name="q8" value="Heisenberg's Kitchen"> Heisenberg's Kitchen</label>
+                <label><input type="radio" name="q8" value="Saul's Diner"> Saul's Diner</label>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <h2>9. What is Jesse Pinkman's main issue throughout the series?</h2>
+            <div class="options">
+                <label><input type="radio" name="q9" value="Addiction"> Addiction</label>
+                <label><input type="radio" name="q9" value="Depression"> Depression</label>
+                <label><input type="radio" name="q9" value="Anger Management Issues"> Anger Management Issues</label>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <h2>10. Who says the phrase "I am the one who knocks!"?</h2>
+            <div class="options">
+                <label><input type="radio" name="q10" value="Walter White"> Walter White</label>
+                <label><input type="radio" name="q10" value="Saul Goodman"> Saul Goodman</label>
+                <label><input type="radio" name="q10" value="Mike Ehrmantraut"> Mike Ehrmantraut</label>
+            </div>
+        </div>
+
+        <!-- Add more questions (11 to 30) -->
+
+        <button type="button" onclick="submitQuiz()">Submit</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+<script>
+    function submitQuiz() {
+        const form = document.getElementById('quiz-form');
+        const resultDiv = document.getElementById('result');
+        const answers = {
+            q1: "Walter White",
+            q2: "Heisenberg",
+            q3: "Bitch",
+            q4: "Skyler White",
+            q5: "Jane Margolis",
+            q6: "Emilio Koyama",
+            q7: "Chemistry Teacher",
+            q8: "Los Pollos Hermanos",
+            q9: "Addiction",
+            q10: "Walter White"
+            // Add more answers for all 30 questions
+        };
+
+        let score = 0;
+        const formData = new FormData(form);
+        let incorrectAnswers = [];
+
+        formData.forEach((value, key) => {
+            if (answers[key] === value) {
+                score++;
+            } else {
+                incorrectAnswers.push({ question: key, selected: value, correct: answers[key] });
+            }
+        });
+
+        // Display the score
+        resultDiv.innerHTML = `<p>Your score is: ${score} out of 30</p>`;
+
+        // Display incorrect answers
+        if (incorrectAnswers.length > 0) {
+            let incorrectHTML = "<h3>You got the following answers wrong:</h3><ul>";
+            incorrectAnswers.forEach(item => {
+                incorrectHTML += `<li>Question ${item.question.replace('q', '')}: You selected "${item.selected}", but the correct answer is "${item.correct}".</li>`;
+            });
+            incorrectHTML += "</ul>";
+            resultDiv.innerHTML += incorrectHTML;
+        } else {
+            resultDiv.innerHTML += "<p>Great job! You got all the answers right!</p>";
+        }
+    }
+</script>
+
+</body>
+</html>
